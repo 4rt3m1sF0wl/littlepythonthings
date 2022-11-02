@@ -20,7 +20,9 @@ def winstatefunc():
     elif bool(board[0] == 'X' and board[1] == 'X' and board[2] == 'X') or bool(board[0] == 'X' and board[4] == 'X' and board[8] == 'X') or bool(board[3] == 'X' and board[4] == 'X' and board[5] == 'X') or bool(board[6] == 'X' and board[7] == 'X' and board[8] == 'X') or bool(board[0] == 'X' and board[3] == 'X' and board[6] == 'X') or bool(board[1] == 'X' and board[4] == 'X' and board[7] == 'X') or bool(board[2] == 'X' and board[5] == 'X' and board[8] == 'X') or bool(board[2] == 'X' and board[4] == 'X' and board[6] == 'X'):
         print('\nPlayer 1 Wins!! Good job Player 1.')
         return True
-  
+    elif unplayed == []:
+        print("It's a Tie... try again ?")
+        return True
 
 print('This is the board\n' '||', board[0], board[1], board[2],'||\n||', board[3], board[4], board[5], '||\n||', board[6], board[7], board[8],'||' )
 
