@@ -15,7 +15,7 @@ while restart.upper() != 'Y' or restart.upper() != "YES":
     #function to check if a winstate is reached, checks all positions (very bloated lol)
     def winstatefunc():
         if bool(board[0] == 'O' and board[1] == 'O' and board[2] == 'O') or bool(board[0] == 'O' and board[4] == 'O' and board[8] == 'O') or bool(board[3] == 'O' and board[4] == 'O' and board[5] == 'O') or bool(board[6] == 'O' and board[7] == 'O' and board[8] == 'O') or bool(board[0] == 'O' and board[3] == 'O' and board[6] == 'O') or bool(board[1] == 'O' and board[4] == 'O' and board[7] == 'O') or bool(board[2] == 'O' and board[5] == 'O' and board[8] == 'O') or bool(board[2] == 'O' and board[4] == 'O' and board[6] == 'O'):
-            return input('\nPlayer 2 Wins!! Good job Player 2. Try again? y/n:')
+            restart = input('\nPlayer 2 Wins!! Good job Player 2. Try again? y/n:')
             return True
 
         elif bool(board[0] == 'X' and board[1] == 'X' and board[2] == 'X') or bool(board[0] == 'X' and board[4] == 'X' and board[8] == 'X') or bool(board[3] == 'X' and board[4] == 'X' and board[5] == 'X') or bool(board[6] == 'X' and board[7] == 'X' and board[8] == 'X') or bool(board[0] == 'X' and board[3] == 'X' and board[6] == 'X') or bool(board[1] == 'X' and board[4] == 'X' and board[7] == 'X') or bool(board[2] == 'X' and board[5] == 'X' and board[8] == 'X') or bool(board[2] == 'X' and board[4] == 'X' and board[6] == 'X'):
