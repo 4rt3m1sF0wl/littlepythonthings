@@ -6,7 +6,6 @@ while restart.upper() != 'Y' or restart.upper() != "YES":
 
     # These are all the variables the code should need to start off
     # Unplayed and played are the moves left and used, and board is all the spaces on the ttt board
-    restart = "y"
     player = -1
     unplayed = ['1','2','3','4','5','6','7','8','9']
     board = ['1','2','3','4','5','6','7','8','9']
